@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// ini berguna untuk membuat rute, agar dihandle saat memasukkan alamat path berdasarkan fungsi
+Route::get('/', function () { 
+    // return view('welcome');
+    return 'Halaman Home';
+});
+
+Route::get('/about', function () { 
+    // return view('welcome');
+    return 'Halaman About';
+});
+
+Route::get('/blog', function () { 
+    // return view('welcome');
+    return 'Halaman Blog';
 });
