@@ -21,7 +21,10 @@ Route::get('/', function () {
 
 Route::get('/about', function () { 
     // return view('welcome');
-    return view('about');
+    return view('about', [
+        "name" => "Quenie Salbiyah",
+        "email" => "Quenie@gmail.com"
+    ]);
 });
 
 Route::get('/blog', function () { 

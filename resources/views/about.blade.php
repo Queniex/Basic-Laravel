@@ -10,5 +10,7 @@
 </head>
 <body>
     <h1>Halaman About</h1>
+    <h3>Nama : <?= $name; ?></h3>
+    <h3>Email : <?= $email; ?></h3>
 </body>
 </html>
