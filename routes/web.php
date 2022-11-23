@@ -16,15 +16,15 @@ use Illuminate\Support\Facades\Route;
 // ini berguna untuk membuat rute, agar dihandle saat memasukkan alamat path berdasarkan fungsi
 Route::get('/', function () { 
     // return view('welcome');
-    return 'Halaman Home';
+    return view('home');
 });
 
 Route::get('/about', function () { 
     // return view('welcome');
-    return 'Halaman About';
+    return view('about');
 });
 
 Route::get('/blog', function () { 
     // return view('welcome');
-    return 'Halaman Blog';
+    return view('posts');
 });
