@@ -84,7 +84,7 @@
 
     <div class="isi h-[81vh] bg-[#FFDDD2]">
         <div class="container">
-            @yield('container');
+           @yield('container');
         </div>
     </div>
 
