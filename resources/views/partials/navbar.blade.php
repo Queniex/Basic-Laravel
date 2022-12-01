@@ -7,14 +7,14 @@
             </label>
             <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 ">
               {{-- Mengikuti Arahan routes --}}
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/blog">Blog</a></li>
+              <li><a href="/" class="{{ ($title === "Home") ? 'active' : '' }}">Home</a></li>
+              <li><a href="/about" class="{{ ($title === "About") ? 'active' : '' }}">About</a></li>
+              <li><a href="/blog" class="{{ ($title === "Blog") ? 'active' : '' }}">Blog</a></li>
             </ul>
           </div>
         </div>
         <div class="navbar-center">
-          <a class="btn btn-ghost normal-case text-xl text-[pink]">Laravel Testing</a>
+          <a class="btn btn-ghost normal-case text-xl text-[pink]">{{ $title }} Pages</a>
         </div>
         <div class="navbar-end">
           <button class="btn btn-ghost btn-circle">
