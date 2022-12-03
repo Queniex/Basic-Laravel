@@ -30,6 +30,12 @@ Route::get('/about', function () {
     ]);
 });
 
+$blog_Posts = [
+    [
+
+    ]
+] ;
+
 Route::get('/blog', function () { 
     // return view('welcome');
     return view('posts', [
